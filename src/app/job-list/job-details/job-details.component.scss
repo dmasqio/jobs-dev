@@ -1,0 +1,122 @@
+.background{
+  overflow-x: hidden;
+  background-color: #FFFFFF;
+  max-height: calc(100vh - 55px);
+  height: calc(100vh - 55px);
+  
+  .job-container {
+    margin: 0% 10%;
+    padding: 5%;
+    background-color: #FFFFFF;
+    
+    .job-column{
+      width:100%;
+      display:flex;
+    }
+    .related-job-column{
+      margin-top:40px;
+      width:30%;
+      display:flex;
+    }
+    >button[theme="dialogue"] {
+      margin: -10px -15px 20px -15px;
+    }
+    .job-related{  
+      span.related-job-title{
+        color:#6392CC;
+        font-size: 1.2em;
+        cursor:pointer;
+      }
+      span.related-job-location{
+        display: block;
+        font-size: 1em;
+        color: #a0a2a4;
+        font-weight: 500;
+      }      
+          
+      height:200px;
+      width:100%
+      
+    }
+    .job-overview{      
+     width:100%;
+    }
+    .job-description-text {
+      word-break: break-word;
+    }
+    .job-header {
+      div.job-info-container {
+        margin: 30px 0px;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        .job-info {
+          color: #0B344F;
+          padding: 10px 10px;
+          margin: 5px;
+          background-color: #f4f4f4;
+          border-radius: 8px;
+          align-self: center;
+          i {
+            font-size: 1em;
+          }
+        }
+      }
+      .job-title {
+        font-size: 2em;
+        font-weight: 600;
+      }
+    }
+    .share {
+      display: flex;
+      margin-top: 50px;
+      button {
+        margin-right: 20px;
+      }
+    }
+    .category {
+      font-weight: 600;
+      display: inline-block;
+      font-size: 1.3em;
+      word-wrap: break-word;
+      overflow: hidden;
+      color: #4a89dc;
+      padding-top: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  :host{
+    .background>.job-container {
+      margin: 0%;
+    }
+  }
+
+  
+
+}
+@media(min-width:768px){
+  .job-container{
+    display:flex;
+  }
+  .job-column{
+    width:70%;
+
+  }
+  .related-job-column{
+    width:100%
+  }
+}
+
+novo-spinner {
+  padding: 20px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: absolute;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}

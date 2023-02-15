@@ -1,0 +1,5 @@
+/* add custom CSS here */
+
+.csi-header-logo{
+    cursor: pointer; padding-top:10px;  background-position: center; background-repeat:no-repeat; background-size:contain; width:20%; height:34px; background-image: url('../assets/CSI-Companies-Full-Color.svg');
+}
