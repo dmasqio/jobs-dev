@@ -257,7 +257,7 @@ export class ApplyModalComponent implements OnInit {
     }
     this.applying = false;
     this.close(true);
-    window.location.href ="https://optomi.com/thank-you/;
+    window.location.href ="https://optomi.com/thank-you/";
   }
 
   private applyOnFailure(res: any): void {
