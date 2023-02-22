@@ -3,7 +3,6 @@
 #########################
 
 # base image
-FROM node 10.3.0
 FROM node:10.3.0 as builder
 
 # set working directory
