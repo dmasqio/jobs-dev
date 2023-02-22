@@ -9,7 +9,7 @@
     "rtf",
     "odt"
   ],
-  "companyName": "CSI",
+  "companyName": "Optomi",
   "companyLogoPath": "",
   "companyUrl": "",
   "careersUrl": "",
@@ -24,9 +24,9 @@
   "maxUploadSize": 5242880,
   "service": {
     "batchSize": 500,
-    "corpToken": "3B37UP",
+    "corpToken": "DJVM1",
     "port": null,
-    "swimlane": "31",
+    "swimlane": "41",
     "fields": [
       "id",
       "title",
