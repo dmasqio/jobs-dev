@@ -89,5 +89,20 @@
     "tslint": "^5.11.0",
     "typescript": "~3.1.6",
     "webpack-cli": "^3.1.0"
-  }
+  },
+  "description": "[![Build Status](https://travis-ci.org/bullhorn/career-portal.svg)](https://travis-ci.org/bullhorn/career-portal)",
+  "main": "karma.conf.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmasqio/jobs-dev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/dmasqio/jobs-dev/issues"
+  },
+  "homepage": "https://github.com/dmasqio/jobs-dev#readme"
 }
