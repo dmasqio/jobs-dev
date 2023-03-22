@@ -13,7 +13,10 @@
     "e2e": "ng e2e",
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
-    "build:client-and-server-bundles": "ng build --prod --configuration=dynamic && ng run career-portal:server:dynamic"
+    "build:client-and-server-bundles": "ng build --prod --configuration=dynamic && ng run career-portal:server:dynamic",
+    "buildpost": "rm -rf build && yarn build-sass",
+    "build-sass": "node-sass --output-style expanded src/index.scss ./build/index.css  && yarn  build-autoprefix",
+    "build-autoprefix": "postcss --use autoprefixer --map --output ./build/index.css ./build/index.css"
   },
   "private": true,
   "engines": {
@@ -51,7 +54,6 @@
     "jsontoxml": "^1.0.1",
     "ngx-clipboard": "^10.0.0",
     "ngx-infinite-scroll": "^10.0.1",
-    "node-sass": "^4.14.1",
     "novo-elements": "3.14.0",
     "npm-check-updates": "^16.7.13",
     "post-robot": "^8.0.29",
@@ -81,7 +83,9 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "node-sass": "^4.14.1",
     "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
     "protractor": "~5.1.2",
     "tailwindcss": "^3.2.7",
     "ts-loader": "^5.2.0",
