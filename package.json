@@ -15,8 +15,8 @@
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
     "build:client-and-server-bundles": "ng build --prod --configuration=dynamic && ng run career-portal:server:dynamic",
     "buildpost": "rm -rf build && yarn build-sass",
-    "build-sass": "node-sass --output-style expanded src/index.scss ./build/index.css  && yarn  build-autoprefix",
-    "build-autoprefix": "postcss --use autoprefixer --map --output ./build/index.css ./build/index.css"
+    "build-sass": "node-sass --output-style expanded src/index.scss ./src/index.css  && yarn  build-autoprefix",
+    "build-autoprefix": "postcss --use autoprefixer --map --output ./src/index.css ./src/index.css"
   },
   "private": true,
   "engines": {
