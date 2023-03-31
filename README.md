@@ -1,4 +1,4 @@
-# Bullhorn Career Portal
+# Optomi Career Portal
 
 [![Build Status](https://travis-ci.org/bullhorn/career-portal.svg)](https://travis-ci.org/bullhorn/career-portal)
 
