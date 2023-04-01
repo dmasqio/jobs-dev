@@ -1,5 +1,5 @@
-/* add custom CSS here */
+@import "tailwindcss/base.css";
+@import "tailwindcss/components.css";
+@import "tailwindcss/utilities.css";
 
-.optomi-header-logo{
-    cursor: pointer; padding-top:10px;  background-position: center; background-repeat:no-repeat; background-size:contain; width:20%; height:34px; background-image: url('../assets/optomi_logo.png');
-}
+/* add custom CSS here */

@@ -2,12 +2,11 @@
   <div class="close-filter-container">
     <button theme="icon" (click)="hideSidebar()" icon="times"></button>
   </div>
-<novo-search placeholder="Keyword Search" alwaysOpen="true" [(ngModel)]="keyword" (ngModelChange)="searchOnDelay()"></novo-search>
+<novo-search placeholder="Search for anything" alwaysOpen="target" [(ngModel)]="keyword" (ngModelChange)="searchOnDelay()"></novo-search>
 </div>
 <novo-spinner inverse *ngIf="loading"></novo-spinner>
 <ng-container *ngIf="!loading">
   <div class="filters">
-    <app-sidebar-filter field="customText1" title="Remote" [filter]="filter" (checkboxFilter)="updateFilter('customText1', $event)"></app-sidebar-filter>
     <app-sidebar-filter field="employmentType" title="Job Types" [filter]="filter" (checkboxFilter)="updateFilter('employmentType', $event)"></app-sidebar-filter>
     <app-sidebar-filter field="publishedCategory(id,name)" title="{{ 'CATEGORY' | translate}}" [filter]="filter" (checkboxFilter)="updateFilter('publishedCategory', $event)" ></app-sidebar-filter>
     <app-sidebar-filter field="address(state)" title="{{ 'STATE' | translate}}" [filter]="filter" (checkboxFilter)="updateFilter('address(state)', $event)"></app-sidebar-filter>

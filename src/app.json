@@ -31,7 +31,7 @@
       "id",
       "title",
       "publishedCategory(id,name)",
-      "address(city,state,countryName)",
+      "address(city,publishedZip,state)",
       "employmentType",
       "dateLastPublished",
       "publicDescription",
@@ -49,10 +49,13 @@
         "field": "dateLastPublished"
       }
     ],
-    "showCategory": true,
+    "showCategory": false,
     "keywordSearchFields": [
       "publicDescription",
-      "title"
+      "title",
+      "state",
+      "city",
+      "publishedZip"
     ]
   },
   "additionalJobCriteria": {
@@ -72,7 +75,7 @@
   },
   "eeoc": {
     "genderRaceEthnicity": false,
-    "veteran": false,
+    "veteran": true,
     "disability": false
   },
   "privacyConsent": {

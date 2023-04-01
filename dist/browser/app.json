@@ -9,7 +9,7 @@
     "rtf",
     "odt"
   ],
-  "companyName": "Optomi",
+  "companyName": "[ COMPANY NAME HERE ]",
   "companyLogoPath": "",
   "companyUrl": "",
   "careersUrl": "",
@@ -24,9 +24,9 @@
   "maxUploadSize": 5242880,
   "service": {
     "batchSize": 500,
-    "corpToken": "DJVM1",
+    "corpToken": "[ CORP TOKEN HERE ]",
     "port": null,
-    "swimlane": "41",
+    "swimlane": "[ SWIMLANE HERE ]",
     "fields": [
       "id",
       "title",
@@ -40,7 +40,7 @@
       "isDeleted",
       "publishedZip",
       "salary",
-      "salaryUnit"      
+      "salaryUnit"
     ],
     "jobInfoChips": [
       "employmentType",
@@ -72,12 +72,12 @@
   },
   "eeoc": {
     "genderRaceEthnicity": false,
-    "veteran": true,
+    "veteran": false,
     "disability": false
   },
   "privacyConsent": {
-    "consentCheckbox": true,
-    "sidebarLink": true,
+    "consentCheckbox": false,
+    "sidebarLink": false,
     "privacyPolicyUrl": "/privacy"
   }
 }
