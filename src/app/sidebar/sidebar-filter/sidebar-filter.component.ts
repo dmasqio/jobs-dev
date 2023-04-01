@@ -129,28 +129,7 @@ export class SidebarFilterComponent implements OnChanges {
           this.checkboxFilter.emit(values);
         };
         break;
-      case 'publishedCategory(id,name)':
-        this.options = res.data
-        .filter((unfilteredResult: ICategoryListResponse) => {
-          return !!unfilteredResult.publishedCategory;
-        })
-        .map((result: ICategoryListResponse) => {
-          return {
-            value: result.publishedCategory.id,
-            label: `${result.publishedCategory.name}`,
-          };
-        });
-        interaction = (API: FieldInteractionApi) => {
-          let values: string[] = [];
-          this.lastSetValue = API.getActiveValue();
-          if (API.getActiveValue()) {
-          values = API.getActiveValue().map((value: number) => {
-            return `publishedCategory.id{?^^equals}${value}`;
-          });
-          }
-          this.checkboxFilter.emit(values);
-        };
-        break;
+      
       default:
         break;
     }

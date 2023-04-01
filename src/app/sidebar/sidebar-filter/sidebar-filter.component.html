@@ -1,4 +1,7 @@
-<div class="filter-header">
+<header></header>
+<body>
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+  <div class="filter-header">
   <span>{{ 'FILTER_BY' | translate}} {{title}}</span>
 </div>
 <novo-spinner inverse *ngIf="loading"></novo-spinner>
@@ -8,3 +11,4 @@
     <novo-control [form]="form" [control]="control"></novo-control>
   </div>
 </novo-form>
+</body>

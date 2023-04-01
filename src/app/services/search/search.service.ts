@@ -19,7 +19,6 @@ export class SearchService {
   'publishedZip',
   'salary',
   'salaryUnit',
-  'customText1'
 ];
 
   public constructor(private http: HttpClient, public settings: SettingsService) {  }

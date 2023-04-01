@@ -2,7 +2,7 @@
   <div class="close-filter-container">
     <button theme="icon" (click)="hideSidebar()" icon="times"></button>
   </div>
-<novo-search placeholder="Search for anything" alwaysOpen="target" [(ngModel)]="keyword" (ngModelChange)="searchOnDelay()"></novo-search>
+<novo-search placeholder="Keyword Search" alwaysOpen="true" [(ngModel)]="keyword" (ngModelChange)="searchOnDelay()"></novo-search>
 </div>
 <novo-spinner inverse *ngIf="loading"></novo-spinner>
 <ng-container *ngIf="!loading">

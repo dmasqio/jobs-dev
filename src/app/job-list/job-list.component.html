@@ -3,9 +3,8 @@
 <button theme="secondary" (click)="openSidebar()" icon="filter" side="left">{{ 'FILTER' | translate }}</button>
 
 </div>
-<div class="open-positions">
-    <span class="open-positions-text">{{ 'OPEN_POSITIONS' | translate }} ({{total}})</span>
-</div>
+<h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-black md:text-5xl lg:text-6xl text:text-black">Open Roles:<span class="text-blue-600 dark:text-blue-500">{{total}}</span></h1>
+
 <novo-list infinite-scroll [infiniteScrollDistance]="2"  [scrollWindow]="false" class="infinite-scroll-viewport" (scrolled)="onScrollDown()"   direction="vertical" *ngIf="!loading && jobs.length > 0" >
 
 <div  *ngFor="let job of jobs" class="job-card" [routerLink]="'jobs/' + job.id" (click)="loadJob(job.id, job.title)">
